@@ -7,6 +7,7 @@ public class WaveSpawner : MonoBehaviour
 
     public float timeBetweenWaves = 5f;
     public Transform spawnPoint;
+    public float TimeBetweenEnemies;
 
     private float countDown = 2f;
     private int waveIndex = 1;
@@ -25,7 +26,7 @@ public class WaveSpawner : MonoBehaviour
         for (int i = 0; i < waveIndex; i++)
         {
             SpawnEnemy();
-            yield return new WaitForSeconds(0.5F);
+            yield return new WaitForSeconds(TimeBetweenEnemies);
         }
         Debug.Log("Wave incoming");
         waveIndex++;
