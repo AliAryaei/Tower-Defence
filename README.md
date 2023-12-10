@@ -1,2 +1,2 @@
 # Tower-Defence
-My first completeley self made tower defence game in unity
+playing around, trying to make something fun
